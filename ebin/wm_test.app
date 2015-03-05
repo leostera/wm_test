@@ -1,0 +1,9 @@
+{application,wm_test,
+             [{description,"wm_test"},
+              {vsn,"1"},
+              {modules,[wm_test,wm_test_app,wm_test_config,wm_test_resource,
+                        wm_test_sup]},
+              {registered,[]},
+              {applications,[kernel,stdlib,inets,crypto,mochiweb,webmachine]},
+              {mod,{wm_test_app,[]}},
+              {env,[{web_ip,"0.0.0.0"},{web_port,8080}]}]}.
